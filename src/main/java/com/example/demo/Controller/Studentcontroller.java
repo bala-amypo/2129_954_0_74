@@ -1,12 +1,12 @@
-package com.example.demo.Controller;
+package com.example.demo.controller;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.web.bind.annotation.*;
 
-import com.example.demo.Entity.Studententity;
-import com.example.demo.Service.StudentService;
+import com.example.demo.entity.Studententity;
+import com.example.demo.service.StudentService;
 
 @RestController
 @RequestMapping("/students") 
