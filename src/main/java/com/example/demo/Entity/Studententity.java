@@ -1,4 +1,4 @@
-package com.example.demo.Entity;
+package com.example.demo.entity;
 import java.time.LocalDate;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,7 +19,7 @@ public class Studententity{
         return id;
     }
     public void setId(Long id){
-        this.id-id;
+        this.id=id;
     }
     public String getName(){
         return name;
