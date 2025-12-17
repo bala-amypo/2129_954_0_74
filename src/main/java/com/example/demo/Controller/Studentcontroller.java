@@ -28,5 +28,18 @@ public class Studentcontroller{
     }
 
     @GetMapping("get/{id}")
-    public Optional<Student>get()
+    public Optional<Student>get(@PathVariable Long id){
+        return studentService.getOneStudent(id);
+    }
+
+    @PutMapping("/update{id}")
+    public String updateStudent(@PathVariable Long id,@RequestBody Student st){
+        Optional<Student> student=studentService.getOneStudent(id);
+        if(student.isPresent()){
+            Student newStudent=student.get();
+            newStudent.setId(id);
+            studentService.insertStudent(newStudent);
+            return "updated Success"
+        }
+    }
 }
