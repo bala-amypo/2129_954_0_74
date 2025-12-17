@@ -1,6 +1,6 @@
-package com.example.demo.entity;
+package com.example.demo.Entity;
 import java.time.LocalDate;
-import jakarta.persistence.entity;
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;

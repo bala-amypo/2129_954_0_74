@@ -1,8 +1,8 @@
-package com.example.demo.service;
+package com.example.demo.Service;
 
 import java.util.*;
 import org.springframework.stereotype.Service;
-import com.example.demo.entity.Studententity;
+import com.example.demo.Entity.Studententity;
 
 @Service
 public class StudentServiceImpl implements Studentservice {

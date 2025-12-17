@@ -1,12 +1,12 @@
-package com.example.demo.controller;
+package com.example.demo.Controller;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.web.bind.annotation.*;
 
-import com.example.demo.entity.Studententity;
-import com.example.demo.service.Studentservice;
+import com.example.demo.Entity.Studententity;
+import com.example.demo.Service.Studentservice;
 
 @RestController
 @RequestMapping("/students") 
@@ -19,7 +19,7 @@ public class Studentcontroller {
     }
 
     @PostMapping
-    public Studententity postStudent(@RequestBody Student st) {
+    public Studententity postStudent(@RequestBody Studententity st) {
         return studentService.insertStudent(st);
     }
 
