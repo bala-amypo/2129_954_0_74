@@ -14,7 +14,7 @@ public class Studentcontroller {
 
     private final Studentservice studentService;
 
-    public StudentController(Studentservice studentService) {
+    public Studentcontroller(Studentservice studentService) {
         this.studentService = studentService;
     }
 
