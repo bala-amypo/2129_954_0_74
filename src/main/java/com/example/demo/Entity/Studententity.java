@@ -45,7 +45,7 @@ public class Studententity{
     public void setCgpa(Float cgpa){
         this.cgpa=cgpa;
     }
-    public Studententity(Float cgpa,LocalDate dob,String email,Long email,Long id,String name){
+    public Studententity(Float cgpa,LocalDate dob,String email,String email,Long id,String name){
     this.cgpa=cgpa;
     this.dob=dob;
     this.email=email;
