@@ -34,7 +34,7 @@ public class Studentcontroller {
     }
 
     @PutMapping("/{id}")
-    public String updateStudent(@PathVariable Long id, @RequestBody Student st) {
+    public String updateStudent(@PathVariable Long id, @RequestBody Studententity st) {
         Optional<Studententity> studentOpt = studentService.getOneStudent(id);
 
         if (studentOpt.isPresent()) {
