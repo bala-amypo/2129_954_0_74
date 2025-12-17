@@ -11,7 +11,7 @@ import com.example.demo.entity.Student;
 import com.example.demo.service.StudentService;
 
 @RestController
-@RequestMapping("/students") // ✅ base path
+@RequestMapping("/students") 
 public class StudentController {
 
     private final StudentService studentService;
@@ -20,7 +20,6 @@ public class StudentController {
         this.studentService = studentService;
     }
 
-    // CREATE
     @PostMapping
     public Student postStudent(@RequestBody Student st) {
         return studentService.insertStudent(st);
@@ -36,7 +35,6 @@ public class StudentController {
         return studentService.getOneStudent(id);
     }
 
-    // UPDATE
     @PutMapping("/{id}")
     public String updateStudent(@PathVariable Long id, @RequestBody Student st) {
         Optional<Student> studentOpt = studentService.getOneStudent(id);
