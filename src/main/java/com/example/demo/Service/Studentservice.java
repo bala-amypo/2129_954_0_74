@@ -4,5 +4,7 @@ import java.util.Optional;
 import com.example.demo.Entity.Student;
 public interface StudentService{
     Student insertStudent(Student st);
-    List<Student>
+    List<Student>getAllStudents();
+    Optional<Student>getOneStudent(Long id);
+    void deleteStudent(Long id);
 }
