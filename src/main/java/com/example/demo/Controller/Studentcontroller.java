@@ -18,5 +18,15 @@ public class Studentcontroller{
     Studentservice studentService;
 
     @PostMapping("/PostStudent")
-    public StudentpostStd()
+    public StudentpostStd(@RequestBody Student st){
+        return studentService.insertStudent(st);
+    }
+
+    @GetMapping("/getAll")
+    public List<Student> getAll(){
+        return studentService.getAllStudents();
+    }
+
+    @GetMapping("get/{id}")
+    public Optional<Student>get()
 }
