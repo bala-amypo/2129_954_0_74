@@ -1,14 +1,14 @@
 StudentController.java
 
-package com.example.demo.controller;
+package com.example.demo.Controller;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.web.bind.annotation.*;
 
-import com.example.demo.entity.Student;
-import com.example.demo.service.StudentService;
+import com.example.demo.Entity.Studententity;
+import com.example.demo.Service.StudentService;
 
 @RestController
 @RequestMapping("/students") 
@@ -21,23 +21,23 @@ public class Studentcontroller {
     }
 
     @PostMapping
-    public Student postStudent(@RequestBody Student st) {
+    public Studententity postStudent(@RequestBody Student st) {
         return studentService.insertStudent(st);
     }
 
     @GetMapping
-    public List<Student> getAll() {
+    public List<Studententity> getAll() {
         return studentService.getAllStudents();
     }
 
     @GetMapping("/{id}")
-    public Optional<Student> getById(@PathVariable Long id) {
+    public Optional<Studententity> getById(@PathVariable Long id) {
         return studentService.getOneStudent(id);
     }
 
     @PutMapping("/{id}")
     public String updateStudent(@PathVariable Long id, @RequestBody Student st) {
-        Optional<Student> studentOpt = studentService.getOneStudent(id);
+        Optional<Studententity> studentOpt = studentService.getOneStudent(id);
 
         if (studentOpt.isPresent()) {
             Studententity student = studentOpt.get();
