@@ -12,11 +12,11 @@ import com.example.demo.service.StudentService;
 
 @RestController
 @RequestMapping("/students") 
-public class StudentController {
+public class Studentcontroller {
 
-    private final StudentService studentService;
+    private final Studentservice studentService;
 
-    public StudentController(StudentService studentService) {
+    public StudentController(Studentservice studentService) {
         this.studentService = studentService;
     }
 
@@ -40,7 +40,7 @@ public class StudentController {
         Optional<Student> studentOpt = studentService.getOneStudent(id);
 
         if (studentOpt.isPresent()) {
-            Student student = studentOpt.get();
+            Studententity student = studentOpt.get();
             student.setName(st.getName());
             student.setEmail(st.getEmail());
             student.setCgpa(st.getCgpa());
@@ -54,7 +54,7 @@ public class StudentController {
 
     @DeleteMapping("/{id}")
     public String deleteStudent(@PathVariable Long id) {
-        Optional<Student> student = studentService.getOneStudent(id);
+        Optional<Studententity> student = studentService.getOneStudent(id);
 
         if (student.isPresent()) {
             studentService.deleteStudent(id);
