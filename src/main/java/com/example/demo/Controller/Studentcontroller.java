@@ -39,7 +39,18 @@ public class Studentcontroller{
             Student newStudent=student.get();
             newStudent.setId(id);
             studentService.insertStudent(newStudent);
-            return "updated Success"
+            return "Updated Success";
         }
+        return "Student Not Found";
+    }
+    
+    @DeleteMapping("/delete/{id}")
+    public String deleteStudent(@PathVariable Long id){
+        Optional<Student>student=studentService.getOneStudent(id);
+        if(student.isPresent()){
+            studentService.deleteStudent(id);
+            return "Deleted Success";
+        }
+        return "Student Not Found";
     }
 }
