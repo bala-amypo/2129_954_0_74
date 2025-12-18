@@ -12,8 +12,7 @@ public class VehicleServiceImpl implements VehicleService {
     private final VehicleRepository vehicleRepo;
     private final UserRepository userRepo;
 
-    public VehicleServiceImpl(VehicleRepository vehicleRepo,
-                              UserRepository userRepo) {
+    public VehicleServiceImpl(VehicleRepository vehicleRepo, UserRepository userRepo) {
         this.vehicleRepo = vehicleRepo;
         this.userRepo = userRepo;
     }
