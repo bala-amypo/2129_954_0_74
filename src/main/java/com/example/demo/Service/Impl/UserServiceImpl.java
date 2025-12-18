@@ -1,6 +1,4 @@
-UserServiceImpl.java
-
-package com.example.demo.service;
+package com.example.demo.Service;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
