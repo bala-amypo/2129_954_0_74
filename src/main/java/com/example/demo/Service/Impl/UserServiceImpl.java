@@ -22,12 +22,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public User registerUser(User user) {
 
-        // default role
         if (user.getRole() == null) {
             user.setRole("USER");
         }
 
-        // encrypt password
         user.setPassword(encoder.encode(user.getPassword()));
 
         return userRepo.save(user);
