@@ -1,10 +1,10 @@
 package com.example.demo.Service;
 
 import org.springframework.stereotype.Service;
-import com.example.demo.entity.User;
-import com.example.demo.entity.Vehicle;
-import com.example.demo.repository.UserRepository;
-import com.example.demo.repository.VehicleRepository;
+import com.example.demo.Entity.User;
+import com.example.demo.Entity.Vehicle;
+import com.example.demo.Repository.UserRepository;
+import com.example.demo.Repository.VehicleRepository;
 
 @Service
 public class VehicleServiceImpl implements VehicleService {
