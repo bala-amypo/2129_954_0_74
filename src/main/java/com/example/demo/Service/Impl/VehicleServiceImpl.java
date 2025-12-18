@@ -9,10 +9,10 @@ import com.example.demo.Repository.Vehiclerepo;
 @Service
 public class VehicleServiceImpl implements VehicleService {
 
-    private final VehicleRepository vehicleRepo;
+    private final Vehiclerepo vehicleRepo;
     private final UserRepository userRepo;
 
-    public VehicleServiceImpl(VehicleRepository vehicleRepo, UserRepository userRepo) {
+    public VehicleServiceImpl(Vehiclerepo vehicleRepo, UserRepository userRepo) {
         this.vehicleRepo = vehicleRepo;
         this.userRepo = userRepo;
     }
