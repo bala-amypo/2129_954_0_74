@@ -3,7 +3,7 @@ package com.example.demo.Service;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import com.example.demo.Entity.User;
-import com.example.demo.Repository.UserRepository;
+import com.example.demo.Repository.Userrepo;
 
 @Service
 public class UserServiceImpl implements UserService {

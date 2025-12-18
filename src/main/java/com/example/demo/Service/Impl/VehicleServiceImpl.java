@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.Entity.User;
 import com.example.demo.Entity.Vehicle;
 import com.example.demo.Repository.UserRepository;
-import com.example.demo.Repository.VehicleRepository;
+import com.example.demo.Repository.Vehiclerepo;
 
 @Service
 public class VehicleServiceImpl implements VehicleService {
