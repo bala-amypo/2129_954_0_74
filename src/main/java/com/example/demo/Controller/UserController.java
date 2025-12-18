@@ -1,8 +1,8 @@
 package com.example.demo.Controller;
 
 import org.springframework.web.bind.annotation.*;
-import com.example.demo.entity.User;
-import com.example.demo.service.UserService;
+import com.example.demo.Entity.User;
+import com.example.demo.Service.UserService;
 
 @RestController
 @RequestMapping("/users")
